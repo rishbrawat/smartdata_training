@@ -1,0 +1,70 @@
+* {
+    /* universal selector- also known as wildcard, matches any element */
+    color: rgb(31, 29, 30);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* type selector: matches html element directly, selects all <p> in this context */
+p {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* class selector */
+#awsm {
+    /* set font size */
+    font-size: 5rem;
+    
+    /* turn on border  */
+    border: 1px solid;
+
+    /* transform the text to uppercase */
+    text-transform: uppercase;
+
+    width: 320px;
+}
+
+.text-box {
+    font-size: 2rem;
+    color: white;
+    background-color: blue;
+    border: 50px solid black;
+
+
+    /* box model properties */
+    padding: 0px;
+    margin: 0px;
+
+    box-sizing: border-box;
+}
+
+/* attribute selector
+
+    [data-type='primary'] {
+        color: red;
+}
+*/
+
+/* pseudo classes- html elements can have states either cuz they are being interacted with or one of their child element is in a ceratin state */
+.cm-btn {
+    color: white;
+    background-color: rgb(206, 0, 0);
+    border: 1px solid rgb(212, 44, 44);
+    border-radius: 7px;
+
+    width: 100px;
+    height: 30px;
+
+}
+
+.cm-btn:hover {
+    background-color: brown;
+}
+li::marker {
+    color: rgb(43, 36, 36);
+    font-size: 62px;
+}
+
+::selection {
+    font-size: 24px;
+    color:white;
+}
