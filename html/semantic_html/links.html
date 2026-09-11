@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- the anchor tag algonside with the href attribute creates a hyperlink.
+        links represent connection between two resources, one of which is the current document.
+        
+        links can be created by <a> <area> <form> and <link>
+
+        absolute urls include a protocol, for ex. https:// 
+        here // means, use the same protocol as is actively being used
+
+        
+        the href attribute can begin with mailto: or tel: to make emails or calls
+    -->
+        <section>
+            <a href="https://www.google.com">open google</a>
+
+            <a href="mailto:123@gmail.com">reach us through mail!</a>
+            <a href="tel:123456789">+(123) 456789</a>
+
+            <!-- downloadable resources -->
+             <a href="blob:https://jakearchibald.github.io/944a5fc8-fdb3-458a-91ee-cdd5964b6646" download="hal.svg">download</a>
+        </section>
+
+
+
+        <!-- browsing context
+            the target attribute enables the defining of the browser context for the link navigation and form submission.
+        -->
+
+        <section>
+            <a href="https://www.google.com" target="_blank" rel="nofollow">open google</a>
+            <a href="https://www.google.com" target="_self">open google</a>
+            <a href="https://www.google.com" target="_top">open google</a>
+            <a href="https://www.google.com" target="_parent">open google</a>
+        </section>
+</body>
+</html>
