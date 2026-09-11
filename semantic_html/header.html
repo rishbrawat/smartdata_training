@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="header.css">
+
+        <title>Semantic Header</title>
+    </head>
+    <body>
+
+        <!-- header element isnt always a landmark, it has different semantics depending on where it is nested .
+        
+        when the header is at the top level, it acts as a site banner,
+        when it is nesetd inside <main>, <article>, <section>, it is identified as a header of that section and is not a landmark.
+        -->
+
+
+        <!-- the <nav> identies content as navigation, as this <nav> is nested in the site heading, it is the main navigation for the site.
+            
+            if it was inside <article> or <section>, it would have been a navigation for those.    
+            
+        -->
+
+
+        <header>
+            <h1>Semantic Header</h1>
+            <nav>
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Register</a>
+                <a href="">Contact</a>
+            </nav>
+        </header>
+
+
+        <!-- main: there is a single main landmark element, the main element identifies the main content of the document, there should be only one <main> per page -->
+
+        <main><p>some main content</p></main>
+
+        <!-- aside: is for the content that is related to the webpage indirectly -->
+        <aside><p>aside content</p></aside>
+
+        <!-- article represents a complete or self contained section of that content that is, its independently reusable. -->
+        <article></article>
+
+        <!-- section is used to keep standalone sections of a document when there is no more specific semantic element to use, sections should have headings -->
+        <section></section>
+
+        <!-- footer also depends on where it is located, when it is a site footer, its a landmark, and should contain the site footer information such as copyright statement, contact information, and links to privacy cookies -->
+        <footer>
+            <p>&copy;2022 Semantic Header, LLC. all rights are partial.</p>
+        </footer>
+
+    </body>
+</html>
