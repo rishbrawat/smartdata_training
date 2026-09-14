@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\rishabhrawat\\Desktop\\Web_Development\\dotnet\\introduction\\ConsoleApp1\\ConsoleApp1.csproj": {}
+    "C:\\Users\\rishabhrawat\\Desktop\\Web_Development\\dotnet\\introduction\\ConsoleApp1\\ConsoleApp1.csproj": {}
   },
   "projects": {
-    "c:\\Users\\rishabhrawat\\Desktop\\Web_Development\\dotnet\\introduction\\ConsoleApp1\\ConsoleApp1.csproj": {
+    "C:\\Users\\rishabhrawat\\Desktop\\Web_Development\\dotnet\\introduction\\ConsoleApp1\\ConsoleApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\rishabhrawat\\Desktop\\Web_Development\\dotnet\\introduction\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectUniqueName": "C:\\Users\\rishabhrawat\\Desktop\\Web_Development\\dotnet\\introduction\\ConsoleApp1\\ConsoleApp1.csproj",
         "projectName": "ConsoleApp1",
-        "projectPath": "c:\\Users\\rishabhrawat\\Desktop\\Web_Development\\dotnet\\introduction\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectPath": "C:\\Users\\rishabhrawat\\Desktop\\Web_Development\\dotnet\\introduction\\ConsoleApp1\\ConsoleApp1.csproj",
         "packagesPath": "C:\\Users\\rishabhrawat\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\rishabhrawat\\Desktop\\Web_Development\\dotnet\\introduction\\ConsoleApp1\\obj\\",
+        "outputPath": "C:\\Users\\rishabhrawat\\Desktop\\Web_Development\\dotnet\\introduction\\ConsoleApp1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
