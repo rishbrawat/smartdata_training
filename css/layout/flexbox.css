@@ -110,5 +110,40 @@
  /* 
     flexbox alignment 
     
-        
+    for distributing space
+    ___________________________
+    justify-content: main axis
+    align-content: cross axis
+    place-content: a shorthand for both of the properties above
+
+    for alignment
+    ___________________
+    align-self: aligns a single item on the cross axis
+    align-items: aligns all the items as group in cross axis
+
+
+    inshort
+    
+        if main axis-----> justify-
+        cross axis ------> align-
+
 */
+.container-4 {
+    background-color: grey;
+    color: white;
+
+    display: flex;
+    /* to distribute space in center */
+    /* justify-content: center; */
+
+
+    /* there is equal space between items but now around them */
+    /* justify-content: space-between;  */
+
+    /* equal space from all directions */
+    /* justify-content: space-evenly; */
+
+    height: 100px;
+    /* align-items: flex-end ; */
+    align-content: stretch;
+}
