@@ -1,0 +1,18 @@
+/* 
+    the display property does two thigs, determines if the box is applied acts as inline or block.
+
+
+    inline elements sits next to each other, they behave like word in a sentence.
+
+    block elements dont sit next to each other, they create new line for themselves, unless changed by css code.
+
+    margin on the all sides of a block element will be respected
+*/
+
+.inln-text {
+    /* paragraph is inline by default */
+    display: block;
+}
+
+/* the display property also determines how an elements children should behave */
+

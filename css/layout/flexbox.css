@@ -1,0 +1,114 @@
+/* 
+    flexbox is a layout for one-dimesional layouts, layout across a single axis, either horizontally or vertically, by default, flexbox will align the element's children next to each other, and stretch them in block direction. so they are all same height.
+*/
+
+/* 
+    flex items move as a group on the main axis. left to right by default.
+
+    the cross axis runs in other direction, from up to down.
+*/
+
+.container-1 {
+    /* this initial value means that
+        items display as a row
+        they do not wrap
+        they do not grow to fill container
+        they line up at the start of the container
+    */
+    display: flex;
+
+
+    /* flex-direction by default is row
+
+        we can set them to 
+        row-reverse
+        column
+        column reverse
+    
+    */
+    flex-direction: row;
+
+    /* writing-mode: determines whether the lines of text is laid out horizontally or vertically, as well as the direction in which blocks and text lines progress. */
+    writing-mode: vertical-rl;
+
+
+}
+
+.container-2 {
+    /* setting flex-direction to column reverse */
+    display: flex;
+    flex-direction: column-reverse;
+    /* when we do row-reverse or column reverse, they effect accessibility,
+        cuz the reordering is only happening visually and not logically, logical order is only order screen reders will read from.
+    */
+
+
+}
+
+.container-3 {
+    display: flex;
+    /* gap determines the space between adjacent flex items */
+    gap: 1rem; 
+    border: 2px solid black;
+    /* max-width: 500px; */
+    
+    /* 
+    flex wrap: initial value of the flex-wrap is nowrap, which means if there is not enough space in the container, items will overflow. by default its set to nowrap.
+    
+    when a flex container wraps, it creates multiple flex lines, in terms of space distribution, each line acts like a new flex container. therefor its not possible to something on row 2 get line up with something in the above row
+    */
+    /* flex-wrap: nowrap; */
+
+    /* additionally we can set flex-direction and flex-wrap properties using the shorthand property flex-flow */
+    flex-flow: row wrap;
+}
+
+
+/*  flex grow
+    when we have more space that required, items usually line up at the beginning and they do not fill up the space.
+    they stop growing at their max-content size, this is cuz the initial value of the flex- property :
+
+    flex-grow: 0 -> items do not grow
+    flex-shrink: 1-> items can shrink smaller than their flex-basis
+    flex-basis: auto -> items have base size of auto
+
+    flex: initial -> shorthand for all these
+
+
+    flex-grow: 1: items can grow larger than their flex-basis.
+    flex-shrink: 1: items can shrink smaller than their flex-basis.
+    flex-basis: auto: items have a base size of auto.
+    flex: auto shorthand for this
+*/
+.item-1 {
+    background-color: red;
+    
+    flex: 1;
+}
+
+.item-2 {
+    background-color: blue;
+    color: white;
+
+    /* grows the 2x of original size */
+    flex: 2; 
+}
+.item-5 {
+    background-color: green;
+    color: white;
+
+    flex: 3;
+}
+
+/*
+    items in flexbox can be reodered using the order property, this property allows the ordering of items in ordinal groups.
+    items are laid out in the direction dictated by flex-direction.
+
+    if more than one item have same value, it will be displayed with the other items with that value.
+ */
+
+ /* 
+    flexbox alignment 
+    
+        
+*/
