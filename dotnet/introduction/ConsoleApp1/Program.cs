@@ -68,3 +68,117 @@ public class Program
 // dot operator is used to access both method and properties of an object. the dot operator is also used to access static methods and properties of a class. static methods and properties are not owned by an object, they are owned by the class itself. 
 
 
+// assignment
+public class Student
+{
+    public string Name { get; set; }
+    public int Age { get; set; }
+    public int id { get; set; }
+
+    Student(string name, int age, int id)
+    {
+        Name = name;
+        Age = age;
+        this.id = id;
+    }
+}
+
+// employee class
+public class Employee
+{
+    public string Name { get; set; }
+    public int Age { get; set; }
+    public int id { get; set; }
+
+    Employee(string name, int age, int id)
+    {
+        Name = name;
+        Age = age;
+        this.id = id;
+    }
+}
+
+// bank account class
+public class BankAccount
+{
+    public string AccountNumber { get; set; }
+    public string AccountHolderName { get; set; }
+    public double Balance { get; set; }
+
+    BankAccount(string accountNumber, string accountHolderName, double balance)
+    {
+        AccountNumber = accountNumber;
+        AccountHolderName = accountHolderName;
+        Balance = balance;
+    }
+}
+
+// calculator class
+public class Calculator
+{
+    public int Add(int a, int b)
+    {
+        return a + b;
+    }
+
+    public int Subtract(int a, int b)
+    {
+        return a - b;
+    }
+
+    public int Multiply(int a, int b)
+    {
+        return a * b;
+    }
+
+    public double Divide(int a, int b)
+    {
+        if (b == 0)
+        {
+            throw new DivideByZeroException("Cannot divide by zero.");
+        }
+        return (double)a / b;
+    }
+}
+
+// student grade analysis
+public class StudentGradeAnalysis
+{
+    public string StudentName { get; set; }
+    public int[] Grades { get; set; }
+
+    StudentGradeAnalysis(string studentName, int[] grades)
+    {
+        StudentName = studentName;
+        Grades = grades;
+    }
+
+    public double CalculateAverage()
+    {
+        if (Grades.Length == 0)
+        {
+            throw new InvalidOperationException("No grades available to calculate average.");
+        }
+        double sum = 0;
+        foreach (int grade in Grades)
+        {
+            sum += grade;
+        }
+        return sum / Grades.Length;
+    }
+
+    public string GetLetterGrade()
+    {
+        double average = CalculateAverage();
+        if (average >= 90)
+            return "A";
+        else if (average >= 80)
+            return "B";
+        else if (average >= 70)
+            return "C";
+        else if (average >= 60)
+            return "D";
+        else
+            return "F";
+    }
+}
