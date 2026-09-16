@@ -1,0 +1,12 @@
+/* css lets you create 2 dimensional layouts 
+    grid is made up of lines which are in horizontal (rows) and vertical (columns) direction.
+
+    a grid track is space between two adjacent grid lines. 
+    grid cell is the space between two adjacent row and column lines.
+    
+
+*/
+
+.container {
+    display: grid;
+}
